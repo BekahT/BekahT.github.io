@@ -20,6 +20,11 @@ p, ul {
     font-size: 16px;
     line-height: 1.6em; 
 }
+.blog {
+    height:30%;
+    width:90%;
+    overflow:scroll;
+}
 /* #page-title { add photo of pebble beach
 }
 */

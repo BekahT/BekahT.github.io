@@ -1,18 +1,22 @@
 body {
-    background-color:#f1f1f2;
+    background-color:#f1f3ce;
     color:black;
     max-width: 700px;
     margin: 1rem auto 1rem;
     font-family: 'Raleway', sans-serif; 
 }
-h1,h2 {
+h1 {
     text-align: center;
-    color:#1995ad;
+    color:#1e656d;
+    }
+h2 {
+    text-align: center;
+    color:#f62a00;
     }
 p{
     font-size: 16px;
     line-height: 25px; 
-    color:bcbabe; 
+    color:00293c; 
 }
 ul {
     font-size: 18px;

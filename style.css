@@ -10,6 +10,7 @@ h1, h2 {
 }
 h1 {
     color:#6a1ef7;
+    font-size:60px;
     }
 h2 {
     color:#a239ca;
@@ -19,11 +20,12 @@ p, ul {
     line-height: 1.6em; 
 }
 .page-title { 
-    background-image:url(Images/Beach.JPG);
+    background-image:url(Images/Beach-wide.jpg);
     background-size:cover;
     background-repeat:no-repeat;
     line-height:250px;
     border-radius:25%;
+    min-height:600px;
 }
 .blog, .section {
     height:722px;

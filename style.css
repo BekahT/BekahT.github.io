@@ -5,15 +5,16 @@ body {
     margin: 1rem auto 1rem;
     font-family: 'Lora'; 
 }
-h1 {
-    text-align: center;
-    color:#4717f6;
+h1, h2 {
     font-family:'Quicksand';
+    text-align: center;
+    text-transform: uppercase;
+}
+h1 {
+    color:#4717f6;
     }
 h2 {
-    text-align: center;
     color:#a239ca;
-    font-family:'Quicksand';
     }
 p{
     font-size: 16px;

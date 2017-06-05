@@ -3,6 +3,7 @@ body {
     color:black;
     max-width: 700px;
     margin: 1rem auto 1rem;
+    font-family:'Lucida Grande'; 
 }
 h1 {
     text-align: center;
@@ -12,6 +13,11 @@ h2 {
     text-align: center;
     color: #00aaff; 
 }
+p{
+    font-size: 14px;
+    line-height: 25px; 
+}
 ul {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 25px; 
 }

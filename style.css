@@ -16,11 +16,7 @@ h1 {
 h2 {
     color:#a239ca;
     }
-p{
+p, ul {
     font-size: 16px;
-    line-height: 1.6em; 
-}
-ul {
-    font-size: 18px;
     line-height: 1.6em; 
 }

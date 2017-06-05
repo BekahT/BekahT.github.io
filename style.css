@@ -1,18 +1,14 @@
 body {
-    background-color:#f0f8ff;
+    background-color:#f0ffff;
     color:black;
     max-width: 700px;
     margin: 1rem auto 1rem;
     font-family: 'Raleway', sans-serif; 
 }
-h1 {
+h1,h2 {
     text-align: center;
-    color:#535399;
+    color:#00008b;
     }
-h2 {
-    text-align: center;
-    color:#535399; 
-}
 p{
     font-size: 16px;
     line-height: 25px; 

@@ -1,7 +1,7 @@
 body {
     background-color:#fafafa;
     color:#0e0b16; 
-    font-family: 'Lora'; 
+    font-family: 'Lato'; 
 }
 h1, h2 {
     font-family:'Quicksand';
@@ -24,7 +24,7 @@ p, ul {
     background-size:cover;
     background-repeat:no-repeat;
     line-height:250px;
-    border-radius:25%;
+    border-radius:20%;
     min-height:600px;
 }
 .blog, .section {
@@ -36,10 +36,10 @@ p, ul {
 .right {
     float:right;
     width:48%;
-    padding:5% 0% 0% 0%
+    padding:5% 0% 5% 0%
 }
 .left {
     float:left;
     width:48%;
-    padding:5% 0% 0% 0%
+    padding:5% 0% 5% 0%
 }

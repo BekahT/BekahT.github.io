@@ -1,5 +1,5 @@
 body {
-    background-color:#f0ffff;
+    background-color:#f0f8ff;
     color:black;
     max-width: 700px;
     margin: 1rem auto 1rem;
@@ -7,7 +7,7 @@ body {
 }
 h1,h2 {
     text-align: center;
-    color:#00008b;
+    color:#4169e1;
     }
 p{
     font-size: 16px;

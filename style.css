@@ -5,11 +5,13 @@ body {
     margin: 1rem auto 1rem;
 }
 h1 {
-    text-align: center
+    text-align: center;
+    color: #751aff; 
     }
 h2 {
-    text-align: center
+    text-align: center;
+    color: #751aff; 
 }
 ul {
-    font-size: 18px
+    font-size: 18px;
 }

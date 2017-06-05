@@ -22,9 +22,9 @@ p, ul {
 }
 .blog {
     height:500px;
-    width:100%;
     overflow:scroll;
-    border-style:groove;
+    border: 7px dotted #4717f6;
+    padding:5%;
 }
 /* #page-title { add photo of pebble beach
 }

@@ -1,16 +1,16 @@
 body {
     background-color:#f2f2f2;
-    color:#00aaff;
+    color:black;
     max-width: 700px;
     margin: 1rem auto 1rem;
 }
 h1 {
     text-align: center;
-    color: #b366ff;
+    color: #00aaff;
     }
 h2 {
     text-align: center;
-    color: #b366ff; 
+    color: #00aaff; 
 }
 ul {
     font-size: 18px;

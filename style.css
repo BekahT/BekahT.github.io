@@ -1,7 +1,6 @@
 body {
     background-color:#fafafa;
     color:#0e0b16; 
-    max-width: 700px;
     font-family: 'Lora'; 
 }
 h1, h2 {
@@ -21,26 +20,24 @@ p, ul {
 }
 .page-title { 
     background-image:url(Images/Beach.JPG);
-    background-size:contain;
+    background-size:cover;
     background-repeat:no-repeat;
-    height:400px;
     line-height:250px;
-    border-radius:85%;
-    border: 1px raised;
+    border-radius:25%;
 }
-.blog {
-    height:750px;
+.blog, .section {
+    height:722px;
     overflow:scroll;
     border: 7px dotted #6a1ef7;
     padding:0% 5% 5% 5%;
 }
-.right{
+.right {
     float:right;
-    width:40%;
-    padding:5%;
+    width:48%;
+    padding:5% 0% 0% 0%
 }
 .left {
     float:left;
-    width:40%;
-    padding:5%;
+    width:48%;
+    padding:5% 0% 0% 0%
 }

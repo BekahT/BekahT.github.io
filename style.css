@@ -27,9 +27,10 @@ p, ul {
     border: 2px solid black;
 }
 #title {
-	margin:100px;
+    margin:100px;
     background-color:#fafafa;
     border: 2px solid #fafafa;
+    border-radius:50%;
     opacity:0.6;
     filter:alpha(opacity=60); /* For IE8 and earlier */
 }

@@ -1,55 +1,55 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 body {
-    background-color:#fafafa;
-    color:#0e0b16; 
-    font-family:'Raleway'; 
+    background-color: #fafafa;
+    color: #0e0b16; 
+    font-family: 'Raleway'; 
 }
 h1, h2 {
-    font-family:'Quicksand';
-    text-align:center;
-    text-transform:uppercase;
+    font-family: 'Quicksand';
+    text-align: center;
+    text-transform: uppercase;
 }
 h2 {
-    color:#a239ca;
+    color: #a239ca;
 }
 p, ul {
-    font-size:16px;
-    line-height:1.6em; 
+    font-size: 16px;
+    line-height: 1.6em; 
 }
 .heading { 
-    background-image:url(Images/Beach-wide.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    line-height:70px;
-    border-radius:20%;
-    min-height:600px;
+    background-image: url(Images/Beach-wide.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 70px;
+    border-radius: 20%;
+    min-height: 600px;
     border: 2px solid black;
 }
 #title {
-    position:relative;
-    top:110px;
-    background-color:#fafafa;
+    position: relative;
+    top: 110px;
+    background-color: #fafafa;
     border: 2px solid #fafafa;
-    opacity:0.6;
-    filter:alpha(opacity=60); /* For IE8 and earlier */
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 #title h1 {
-    margin:5px;
-    color:#6a1ef7;
-    font-size:60px;
+    margin: 5px;
+    color: #6a1ef7;
+    font-size: 60px;
 }
 .right, .left {
-    height:722px;
-    overflow:scroll;
-    border:7px dotted #6a1ef7;
-    padding:1%;
-    width:45%;
-    margin:5% 0%;
+    height: 722px;
+    overflow: scroll;
+    border: 7px dotted #6a1ef7;
+    padding: 1%;
+    width: 45%;
+    margin: 5% 0%;
 }
 .right {
-    float:right;
+    float: right;
 }
 .left {
-    float:left;
+    float: left;
 }

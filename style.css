@@ -27,7 +27,8 @@ p, ul {
     border: 2px solid black;
 }
 #title {
-    margin:100px;
+    position:relative;
+    top:100px;
     background-color:#fafafa;
     border: 2px solid #fafafa;
     opacity:0.6;

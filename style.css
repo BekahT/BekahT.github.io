@@ -38,19 +38,17 @@ p, ul {
     color:#6a1ef7;
     font-size:60px;
 }
-.blog, .section {
+.right, .left {
     height:722px;
     overflow:scroll;
     border:7px dotted #6a1ef7;
-    padding:0% 5% 5% 5%;
+    padding:1%;
+    width:45%;
+    margin:5% 0%;
 }
 .right {
     float:right;
-    width:49%;
-    margin:5% 0%;
 }
 .left {
     float:left;
-    width:49%;
-    margin:5% 0%;
 }

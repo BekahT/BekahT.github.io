@@ -31,7 +31,8 @@ p, ul {
     z-index: 10;
     opacity: 0.85;
     background-image: -webkit-linear-gradient(#6a1ef7, #a239ca);
-    background-color: #6a1ef7;
+    background-image: -moz-linear-gradient(#6a1ef7, #a239ca); /* For Firefox */
+    background-color: #6a1ef7;  /* For browsers that don't support gradient */
 }
 
 .nav-bar li {

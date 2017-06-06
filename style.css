@@ -10,10 +10,6 @@ h1, h2 {
     text-align:center;
     text-transform:uppercase;
 }
-h1 {
-    color:#6a1ef7;
-    font-size:60px;
-}
 h2 {
     color:#a239ca;
 }
@@ -25,9 +21,22 @@ p, ul {
     background-image:url(Images/Beach-wide.jpg);
     background-size:cover;
     background-repeat:no-repeat;
-    line-height:250px;
+    line-height:70px;
     border-radius:20%;
     min-height:600px;
+    border: 2px solid black;
+}
+#title {
+	margin:100px;
+    background-color:#fafafa;
+    border: 2px solid #fafafa;
+    opacity:0.6;
+    filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+#title h1 {
+    margin:5px;
+    color:#6a1ef7;
+    font-size:60px;
 }
 .blog, .section {
     height:722px;

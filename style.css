@@ -21,10 +21,65 @@ p, ul {
     line-height: 1.6em; 
 }
 
+.page-header ul {
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    background-color: #6a1ef7;
+    opacity: 0.85;
+}
+
+.nav-bar li {
+    list-style-type: none;
+    display: block;
+    float: left; 
+    text-align: center;
+    padding: 14px 16px;
+    color: #fafafa;    
+
+}
+
+.nav-bar li:hover {
+    background-color: #a239ca;
+}
+
+.nav-bar a {
+    color: #fafafa;   
+    text-decoration: none; 
+}
+
+.tiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #a239ca;
+    color: #fafafa;  
+    text-align: center;
+    padding: 5px 1px;
+    position: absolute;
+    z-index: 11;
+}
+
+.tip:hover .tiptext {
+    visibility: visible;
+}
+
+.tip .tiptext {
+    width: 120px;
+    top: 100%;
+    margin-left: -92px;
+}
+
 .heading { 
     background-image: url(Images/Beach-wide.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position:center bottom; 
+    position: relative;
+    top: 50px;
     line-height: 70px;
     border-radius: 20%;
     min-height: 600px;
@@ -53,6 +108,8 @@ p, ul {
     padding: 1%;
     width: 45%;
     margin: 5% 0%;
+    position: relative;
+    top: 50px;
 }
 
 .right {

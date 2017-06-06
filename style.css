@@ -29,8 +29,8 @@ p, ul {
     top: 0px;
     left: 0px;
     z-index: 10;
-    background-color: #6a1ef7;
     opacity: 0.85;
+    background-image: -webkit-linear-gradient(#6a1ef7, #a239ca);
 }
 
 .nav-bar li {
@@ -48,7 +48,7 @@ p, ul {
 }
 
 .nav-bar li:hover {
-    background-color: #a239ca;
+    background-color: #0e0b16;
 }
 
 .nav-bar a {
@@ -59,7 +59,7 @@ p, ul {
 .tiptext {
     visibility: hidden;
     width: 120px;
-    background-color: #a239ca;
+    background-color: #0e0b16;
     color: #fafafa;  
     text-align: center;
     padding: 5px 1px;
@@ -78,10 +78,8 @@ p, ul {
 }
 
 .heading { 
-    background-image: url(Images/Beach-wide.jpg);
+    background: url(Images/Beach-wide.jpg) no-repeat center bottom; 
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center bottom; 
     position: relative;
     top: 50px;
     line-height: 70px;

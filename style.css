@@ -43,6 +43,10 @@ p, ul {
 
 }
 
+.nav-bar li a {
+    padding: 14px 16px;
+}
+
 .nav-bar li:hover {
     background-color: #a239ca;
 }
@@ -83,7 +87,6 @@ p, ul {
     line-height: 70px;
     border-radius: 20%;
     min-height: 600px;
-    border: 2px solid black;
 }
 
 #title {

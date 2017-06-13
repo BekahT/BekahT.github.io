@@ -33,9 +33,20 @@ nav {
     color: #fafafa;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li > a:hover,
+ul.nav.navbar-nav .dropdown.open .dropdown-toggle {
     background-color: #0e0b16;
     color: #fafafa;
+}
+
+ul.nav.navbar-nav .dropdown.open .dropdown-menu > li > a,
+ul.nav.navbar-nav .dropdown.open .dropdown-menu {
+    background-color: #6a1ef7;
+    color: #fafafa; 
+}
+
+ul.nav.navbar-nav .dropdown.open .dropdown-menu > li > a:hover {
+    background-color: #a239ca;
 }
 
 .jumbotron {

@@ -22,39 +22,40 @@ p, ul {
     font-size: 16px;
 }
 
-nav {
+.mynavbar {
     background-image: -webkit-linear-gradient(#6a1ef7, #a239ca);
     background-image: -moz-linear-gradient(#6a1ef7, #a239ca); /* For Firefox */
     background-color: #6a1ef7;  /* For browsers that don't support gradient */
+
 }
 
-.navbar-default .navbar-nav > li > a,
-.navbar-default .navbar-nav > li > a:focus {
+.mynavbar .mynavitems > li > a,
+.mynavbar .mynavitems  > li > a:focus {
     color: #fafafa;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-ul.nav.navbar-nav .dropdown.open .dropdown-toggle {
+.mynavbar .mynavitems > li > a:hover,
+.mynavbar .mynavitems .dropdown.open .dropdown-toggle {
     background-color: #0e0b16;
     color: #fafafa;
 }
 
-ul.nav.navbar-nav .dropdown.open .dropdown-menu > li > a,
-ul.nav.navbar-nav .dropdown.open .dropdown-menu {
+.mynavbar .mynavitems .dropdown.open .dropdown-menu > li > a,
+.mynavbar .mynavitems .dropdown.open .dropdown-menu {
     background-color: #6a1ef7;
     color: #fafafa; 
 }
 
-ul.nav.navbar-nav .dropdown.open .dropdown-menu > li > a:hover {
+.mynavbar .mynavitems .dropdown.open .dropdown-menu > li > a:hover {
     background-color: #a239ca;
 }
 
-.jumbotron {
+.mybackground {
     min-height: 600px;
     background: url(images/Beach-wide.jpg) no-repeat center bottom;  
 }
 
-.jumbotron h1 {
+.mybackground h1 {
     color: #6a1ef7;
     background-color: #fafafa;
     border: 2px solid #fafafa;

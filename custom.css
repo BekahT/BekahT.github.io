@@ -22,11 +22,14 @@ p, ul {
     font-size: 16px;
 }
 
+a {
+    outline: none;
+}
+
 .mynavbar {
     background-image: -webkit-linear-gradient(#6a1ef7, #a239ca);
     background-image: -moz-linear-gradient(#6a1ef7, #a239ca); /* For Firefox */
     background-color: #6a1ef7;  /* For browsers that don't support gradient */
-
 }
 
 .myhome {

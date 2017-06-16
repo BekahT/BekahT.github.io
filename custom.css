@@ -29,8 +29,12 @@ p, ul {
 
 }
 
+.myhome {
+    color: #fafafa;
+}
+
 .mynavbar .mynavitems > li > a,
-.mynavbar .mynavitems  > li > a:focus {
+.mynavbar .mynavitems > li > a:focus {
     color: #fafafa;
 }
 

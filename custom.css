@@ -26,14 +26,25 @@ a {
     outline: none;
 }
 
+.myhome {
+    color: #fafafa;
+}
+
+.mytoggle, 
+.mynavbar .mytoggle:focus, 
+.mynavbar .mytoggle:hover {
+    background-color:#fafafa;
+    border-color: #fafafa; 
+}
+
+.mynavbar .mytoggle .myiconbar {
+    background-color: #0e0b16;
+}
+
 .mynavbar {
     background-image: -webkit-linear-gradient(#6a1ef7, #a239ca);
     background-image: -moz-linear-gradient(#6a1ef7, #a239ca); /* For Firefox */
     background-color: #6a1ef7;  /* For browsers that don't support gradient */
-}
-
-.myhome {
-    color: #fafafa;
 }
 
 .mynavbar .mynavitems > li > a,
@@ -49,12 +60,12 @@ a {
 
 .mynavbar .mynavitems .dropdown.open .dropdown-menu > li > a,
 .mynavbar .mynavitems .dropdown.open .dropdown-menu {
-    background-color: #6a1ef7;
+    background-color: #a239ca;
     color: #fafafa; 
 }
 
 .mynavbar .mynavitems .dropdown.open .dropdown-menu > li > a:hover {
-    background-color: #a239ca;
+    background-color: #0e0b16;
 }
 
 .mybackground {

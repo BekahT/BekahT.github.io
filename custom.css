@@ -14,7 +14,7 @@ h1, h2 {
 }
 
 h2 {
-    color: #a239ca;
+    color: #6a1ef7;
 }
 
 p, ul {
@@ -42,9 +42,9 @@ a {
 }
 
 .mynavbar {
-    background-image: -webkit-linear-gradient(#6a1ef7, #a239ca);
-    background-image: -moz-linear-gradient(#6a1ef7, #a239ca); /* For Firefox */
-    background-color: #6a1ef7;  /* For browsers that don't support gradient */
+    background-image: -webkit-linear-gradient(#5d97ff, #1751d8);
+    background-image: -moz-linear-gradient(#5d97ff, #1751d8); /* For Firefox */
+    background-color: #2b65ec;  /* For browsers that don't support gradient */
 }
 
 .mynavbar .mynavitems > li > a,
@@ -60,7 +60,7 @@ a {
 
 .mynavbar .mynavitems .dropdown.open .dropdown-menu > li > a,
 .mynavbar .mynavitems .dropdown.open .dropdown-menu {
-    background-color: #a239ca;
+    background-color: #2b65ec;
     color: #fafafa; 
 }
 

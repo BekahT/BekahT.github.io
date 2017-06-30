@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 
 body {
     background-color: #fafafa;
     color: #0e0b16; 
-    font-family: 'Raleway'; 
+    font-family: 'Quicksand'; 
 }
 
 h1, h2 {
-    font-family: 'Quicksand';
+    font-family: 'Lato';
     text-align: center;
     text-transform: uppercase;
 }

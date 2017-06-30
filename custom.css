@@ -26,6 +26,10 @@ a {
     outline: none;
 }
 
+thead {
+	background-color: #f5f5f5;
+}
+
 .myhome {
     color: #fafafa;
 }

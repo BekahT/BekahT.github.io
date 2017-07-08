@@ -105,8 +105,7 @@ thead {
     margin: 1em;
 }
 
-.resourceLink {
-    display: inline;
+.resourceLink > img {
     margin: 1em;
 }
 

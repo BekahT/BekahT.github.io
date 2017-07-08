@@ -7,6 +7,24 @@ $(document).ready(function() {
     $(this).next().slideToggle(400); 
   });
 
+  //show all skills button
+  $('.show-hide').on('click', function() {
+    $('.skill-category').toggle();
+  });
+
+//show/hide button text change
+$('.show-hide').click(function() {
+    var $this = $(this);
+
+    $this.toggleClass('show');
+
+    if ($this.hasClass('show')) {
+        $this.text('Hide All Skills');
+    } else {
+        $this.text('Show All Skills');
+    }
+});
+
     // skill table features
   $('#skillTable').DataTable( {
     responsive: true,

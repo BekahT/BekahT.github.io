@@ -85,7 +85,7 @@ thead {
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
-.skill-button {
+.skill-button, .show-hide {
     display: block;
     margin: 1em auto;
     padding: 0.3em;

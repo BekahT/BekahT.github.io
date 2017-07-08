@@ -12,18 +12,18 @@ $(document).ready(function() {
     $('.skill-category').toggle();
   });
 
-//show/hide button text change
-$('.show-hide').click(function() {
-    var $this = $(this);
+  //show/hide button text change
+  $('.show-hide').click(function() {
+      var $this = $(this);
 
-    $this.toggleClass('show');
+      $this.toggleClass('show');
 
-    if ($this.hasClass('show')) {
-        $this.text('Hide All Skills');
-    } else {
-        $this.text('Show All Skills');
-    }
-});
+      if ($this.hasClass('show')) {
+          $this.text('Hide All Skills');
+      } else {
+          $this.text('Show All Skills');
+      }
+  });
 
     // skill table features
   $('#skillTable').DataTable( {

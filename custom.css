@@ -105,6 +105,11 @@ thead {
     margin: 1em;
 }
 
+.resourceLink {
+    display: inline;
+    margin: 1em;
+}
+
 /* adjustments to datatables features */
 .dataTables_wrapper {
     padding: 0.25em 0.5em; 

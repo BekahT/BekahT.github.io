@@ -87,7 +87,7 @@ thead {
 
 .skill-button {
     display: block;
-    margin: auto;
+    margin: 1em auto;
     padding: 0.3em;
     background-color: #f5f5f5;
     border: 0.5px solid #ddd;
@@ -100,3 +100,12 @@ thead {
 .skill-category {
     list-style-type: none;
 }
+
+.mypanel, .resources {
+    margin: 1em;
+}
+
+/* adjustments to datatables features */
+.dataTables_wrapper {
+    padding: 0.25em 0.5em; 
+} 

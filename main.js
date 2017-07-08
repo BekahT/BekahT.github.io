@@ -1,13 +1,13 @@
 $(document).ready(function() {
-  // auto hide category on load
+  // auto hide skills on load
   $('.skill-category').hide();
 
-  // event handler for clicking a skill
+  // event handler for clicking a category
   $('.skill-button').on('click', function() {
     $(this).next().slideToggle(400); 
   });
 
-    // skill table creation
+    // skill table features
   $('#skillTable').DataTable( {
     responsive: true
   });

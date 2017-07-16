@@ -14,7 +14,7 @@ h1, h2 {
 }
 
 h2 {
-    color: #8A2BE2;
+    color: #661EE8;
 }
 
 p, ul {
@@ -46,9 +46,9 @@ thead {
 }
 
 .mynavbar {
-    background-image: -webkit-linear-gradient(#5d97ff, #1751d8);
-    background-image: -moz-linear-gradient(#5d97ff, #1751d8); /* For Firefox */
-    background-color: #2b65ec;  /* For browsers that don't support gradient */
+    background-image: -webkit-linear-gradient(#5165E7,#0928EA); 
+    background-image: -moz-linear-gradient(#5165E7,#0928EA);  /* For Firefox */ 
+    background-color: (#0928EA);  /* For browsers that don't support gradient */ 
 }
 
 .mynavbar .mynavitems > li > a,
@@ -64,7 +64,7 @@ thead {
 
 .mynavbar .mynavitems .dropdown.open .dropdown-menu > li > a,
 .mynavbar .mynavitems .dropdown.open .dropdown-menu {
-    background-color: #2b65ec;
+    background-color: #061DAC;
     color: #fafafa; 
 }
 
@@ -78,7 +78,7 @@ thead {
 }
 
 .mybackground h1 {
-    color: #8A2BE2;
+    color: #661EE8;
     background-color: #fafafa;
     border: 2px solid #fafafa;
     opacity: 0.7;

@@ -9,7 +9,7 @@ $(document).ready(function() {
 
   //show all skills button
   $('.show-hide').on('click', function() {
-    $('.skill-category').toggle();
+    $('.skill-category').slideToggle(400);
   });
 
   //show/hide button text change
@@ -25,7 +25,7 @@ $(document).ready(function() {
       }
   });
 
-    // skill table features
+  // skill table features
   $('#skillTable').DataTable( {
     responsive: true,
     order: [2, 'desc'], //default sort on completed date, descending

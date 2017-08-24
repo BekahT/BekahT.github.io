@@ -1,4 +1,12 @@
 $(document).ready(function() {
+  //Start Blog
+  $('.blogMonth').on('click', function() {
+    $(this).next().next().slideToggle(600); 
+  });
+
+  //End Blog
+  
+  //Start Skills Page
   // auto hide skills on load
   $('.skill-category').hide();
 
@@ -39,5 +47,6 @@ $(document).ready(function() {
         aria: {paginate: {first: 'First', previous: 'Previous', next: 'Next', last: 'Last'}}
     },
   });
+//End Skills Page
 
 });

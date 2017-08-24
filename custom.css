@@ -6,7 +6,7 @@ body {
     font-family: 'Open Sans'; 
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Lato';
     text-align: center;
     text-transform: uppercase;
@@ -100,10 +100,6 @@ hr {
 .blog h4 {
   letter-spacing: 0.25rem;
   text-transform: uppercase;
-}
-
-.blogMonth {
-    text-align: center;
 }
 
 /* Blog End */

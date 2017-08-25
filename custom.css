@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|'Open Sans'");
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
 
 body {
     background-color: #fafafa;
     color: #0e0b16; 
-    font-family: 'Open Sans'; 
+    font-family: 'Open Sans', sans-serif; 
 }
 
 h1, h2, h3 {

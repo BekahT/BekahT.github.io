@@ -79,7 +79,31 @@ thead {
 .mybackground {
     background: url(images/176.jpg) no-repeat center;  
     background-size: 100% 100%;
-    padding: 15rem 2rem 30rem 2rem;
+}
+
+/* Phones */
+@media only screen
+  and (max-device-width: 600px) {
+    .mybackground {
+        padding: 5rem 1rem 8rem 1rem;
+    }
+}
+ 
+/* Tablets */
+@media only screen
+  and (min-device-width: 601px)
+  and (max-device-width: 1050px) {
+    .mybackground {
+        padding: 10rem 2rem 18rem 2rem;
+    }
+}
+
+/* Laptops and Computers */
+@media only screen
+  and (min-device-width: 1051px) {
+    .mybackground {
+        padding: 15rem 3rem 30rem 3rem;
+     }
 }
 
 .mybackground h1 {

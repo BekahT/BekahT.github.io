@@ -2,7 +2,7 @@
 
 body {
     background-color: #fafafa;
-    color: #0e0b16; 
+    color: #181818; 
     font-family: 'Open Sans', sans-serif; 
 }
 
@@ -13,10 +13,6 @@ h1, h2, h3 {
 
 h1, h2 {
     text-transform: uppercase;
-}
-
-h2 {
-    color: #017756;
 }
 
 p, ul {
@@ -44,13 +40,13 @@ thead {
 }
 
 .mynavbar .mytoggle .myiconbar {
-    background-color: #0e0b16;
+    background-color: #181818;
 }
 
 .mynavbar {
-    background-image: -webkit-linear-gradient(#35649D,#0B3C77); 
-    background-image: -moz-linear-gradient(#35649D,#0B3C77);  /* For Firefox */ 
-    background-color: (#0B3C77);  /* For browsers that don't support gradient */ 
+    background-image: -webkit-linear-gradient(#4a70a5,#1d4d8f); 
+    background-image: -moz-linear-gradient(#4a70a5,#1d4d8f);  /* For Firefox */ 
+    background-color: (#1a4d8f);  /* For browsers that don't support gradient */ 
 }
 
 .mynavbar .mynavitems > li > a,
@@ -60,25 +56,25 @@ thead {
 
 .mynavbar .mynavitems > li > a:hover,
 .mynavbar .mynavitems .dropdown.open .dropdown-toggle {
-    background-color: #0e0b16;
+    background-color: #181818;
     color: #fafafa;
 }
 
 .mynavbar .mynavitems .dropdown.open .dropdown-menu > li > a,
 .mynavbar .mynavitems .dropdown.open .dropdown-menu {
-    background-color: #0B3C77;
+    background-color: #1d4d8f;
     color: #fafafa; 
 }
 
 .mynavbar .mynavitems .dropdown.open .dropdown-menu > li > a:hover {
-    background-color: #0e0b16;
+    background-color: #181818;
 }
 
 
 /* Home Page */
 .mybackground {
-    background: url(images/176.jpg) no-repeat center;  
-    background-size: 100% 100%;
+    background: url(images/sakura3.jpg) repeat center;  
+    background-size: 450px;
 }
 
 /* Phones */
@@ -107,15 +103,16 @@ thead {
 }
 
 .mybackground h1 {
-    color: #017756;
-    background-color: rgba(250, 250, 250, .7);
+    color: #cae5ff;
+    background-color: rgba(24, 24, 24, .8);
 }
 /* End Home Page */
 
 /* About Me */
+
 .aboutMe {
-    background: url("images/26.png") repeat center;
-    background-size: cover;
+    background: url("images/sakura2.jpg") repeat center;
+    background-size: 400px;
  }
 
 .aboutContent {
@@ -132,7 +129,7 @@ hr {
 }
 
 .blog {
-  border: 20px solid #017756;
+  border: 20px solid #cae5ff;
   padding: 20px;
   width: 100%;
   margin: 0 auto;
@@ -174,7 +171,7 @@ hr {
 
 .show-hide:hover, .show-hide:focus,
 .skill-button:hover, .skill-button:focus {
-    background-color: #0B3C77;
+    background-color: #1d4d8f;
     color: #ffffff; 
 }
 

@@ -20,6 +20,9 @@
   <script src="../bootstrap/jquery.min.js"></script>
   <script src="../bootstrap/bootstrap.min.js"></script>
 
+  <!-- Font Awesome CDN -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
   <!-- Datatables Required js-->
   <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
 
@@ -60,7 +63,7 @@
         <span class="icon-bar myiconbar"></span>
       </button>
         <a class="navbar-brand" href="https://bekaht.github.io/">
-      <span class="glyphicon glyphicon-home myhome"></span>
+      <span class="glyphicon glyphicon-home myicon"></span>
       </a>
       </div>
 
@@ -71,11 +74,13 @@
           <li><a href="https://bekaht.github.io/blog/index.html">My Blog</a></li>
           <li><a href="https://bekaht.github.io/skills/index.html">Skills</a></li>
         </ul>
+        </li>
+        </ul>
         <ul class="nav navbar-nav navbar-right mynavitems">
-          <li><a href="https://github.com/BekahT" target="_blank"><span class="glyphicon glyphicon-user"></span> GitHub <span class="sr-only">(current)</span></a></li>
-          <li><a href="MailTo:BekahT.GitHub@Gmail.com"><span class="glyphicon glyphicon-envelope"></span> Email</a></li>
+          <li><a href="https://github.com/BekahT" target="_blank"><span class="fa fa-github myicon"></span> GitHub <span class="sr-only">(current)</span></a></li>
+          <li><a href="MailTo:BekahT.GitHub@Gmail.com"><span class="fa fa-envelope myicon"></span> Email</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-briefcase"></span> Projects <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-briefcase myicon"></span> Projects <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="https://bekaht.github.io/verse-generator/index.html" target="_blank">Bible Verse Generator</a></li>
               <li><a href="https://bekaht.github.io/Baking-Portfolio/index.html" target="_blank">Bootstrap Baking Portfolio</a></li>
@@ -100,54 +105,63 @@
           <li>HTML</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger" style="width: 20%">
-              <span>Basic Knowledge</span>
-            </div>
-            <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 20%">
               <span>Novice</span>
+            </div>
+            <div class="progress-bar progress-bar-warning" style="width: 20%">
+              <span>Competent</span>
+            </div>
+            <div class="progress-bar progress-bar-primary progress-bar-striped active" style="width: 10%">
+              <span>Proficient</span>
             </div>
           </div>
 
           <li>CSS</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger" style="width: 20%">
-              <span>Basic Knowledge</span>
-            </div>
-            <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 20%">
               <span>Novice</span>
-            </div>
-          </div>
-
-          <li>JavaScript</li>
-          <div class="progress">
-            <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 10%">
-              <span>Basic Knowledge</span>
-            </div>
-          </div>
-
-          <li>jQuery</li>
-          <div class="progress">
-            <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 5%">
-              <span>Basic Knowledge</span>
-            </div>
-          </div>
-
-          <li>Markdown</li>
-          <div class="progress">
-            <div class="progress-bar progress-bar-danger" style="width: 20%">
-              <span>Basic Knowledge</span>
             </div>
             <div class="progress-bar progress-bar-warning" style="width: 20%">
-              <span>Novice</span>
+              <span>Competent</span>
+            </div>
+            <div class="progress-bar progress-bar-primary progress-bar-striped active" style="width: 10%">
+              <span>Proficient</span>
             </div>
           </div>
 
           <li>Bootstrap</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger" style="width: 20%">
-              <span>Basic Knowledge</span>
-            </div>
-            <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 5%">
               <span>Novice</span>
+            </div>
+            <div class="progress-bar progress-bar-warning" style="width: 20%">
+              <span>Competent</span>
+            </div>
+            <div class="progress-bar progress-bar-primary progress-bar-striped active" style="width: 10%">
+              <span>Proficient</span>
+            </div>
+          </div>
+
+          <li>JavaScript</li>
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 15%">
+              <span>Novice</span>
+            </div>
+          </div>
+
+          <li>jQuery</li>
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 5%">
+              <span>Novice</span>
+            </div>
+          </div>
+
+          <li>Markdown</li>
+          <div class="progress">
+            <div class="progress-bar progress-bar-danger" style="width: 20%">
+              <span>Novice</span>
+            </div>
+            <div class="progress-bar progress-bar-warning" style="width: 20%">
+              <span>Competent</span>
             </div>
           </div>
         </ul>
@@ -156,20 +170,20 @@
         <ul class="skill-category">
           <li>C#</li>
           <div class="progress">
-            <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 5%">
-              <span>Basic Knowledge</span>
+            <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 10%">
+              <span>Novice</span>
             </div>
           </div>
           <li>C++</li>
           <div class="progress">
-            <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 5%">
-              <span>Basic Knowledge</span>
+            <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 10%">
+              <span>Novice</span>
             </div>
           </div>
           <li>C</li>
           <div class="progress">
-            <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 5%">
-              <span>Basic Knowledge</span>
+            <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 10%">
+              <span>Novice</span>
             </div>
           </div>
 
@@ -179,27 +193,27 @@
           <li>Command Line</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger" style="width: 20%">
-              <span>Basic Knowledge</span>
+              <span>Novice</span>
             </div>
           </div>
 
           <li>GitLab</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger" style="width: 20%">
-              <span>Basic Knowledge</span>
+              <span>Novice</span>
             </div>
             <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 15%">
-              <span>Novice</span>
+              <span>Competent</span>
             </div>
           </div>
 
           <li>GitHub</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger" style="width: 20%">
-              <span>Basic Knowledge</span>
+              <span>Novice</span>
             </div>
             <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 15%">
-              <span>Novice</span>
+              <span>Competent</span>
             </div>
           </div>
         </ul>
@@ -209,22 +223,22 @@
           <li>SmartGit</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger" style="width: 20%">
-              <span>Basic Knowledge</span>
+              <span>Novice</span>
             </div>
           </div>
           <li>Git</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger" style="width: 20%">
-              <span>Basic Knowledge</span>
-            </div>
-            <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 5%">
               <span>Novice</span>
+            </div>
+            <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 10%">
+              <span>Competent</span>
             </div>
           </div>
           <li>Github Desktop</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 20%">
-              <span>Basic Knowledge</span>
+              <span>Novice</span>
             </div>
           </div>
         </ul>
@@ -234,22 +248,22 @@
           <li>Visual Studio Code</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger" style="width: 20%">
-              <span>Basic Knowledge</span>
-            </div>
-            <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 25%">
               <span>Novice</span>
+            </div>
+            <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 20%">
+              <span>Competent</span>
             </div>
           </div>
           <li>Visual Studio</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 10%">
-              <span>Basic Knowledge</span>
+              <span>Novice</span>
             </div>
           </div>
           <li>Sublime Text</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 5%">
-              <span>Basic Knowledge</span>
+              <span>Novice</span>
             </div>
           </div>
         </ul>
@@ -259,21 +273,21 @@
           <li>Cybersecurity</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 15%">
-              <span>Basic Knowledge</span>
+              <span>Novice</span>
             </div>
           </div>
 
           <li>Computer Hardware</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 15%">
-              <span>Basic Knowledge</span>
+              <span>Novice</span>
             </div>
           </div>
 
           <li>Computer Networking</li>
           <div class="progress">
             <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 10%">
-              <span>Basic Knowledge</span>
+              <span>Novice</span>
             </div>
         </ul>
 
@@ -581,7 +595,7 @@
               <td>SkillSoft</td>
               <td>CompTIA A+ 220-902: A Practical Approach to Troubleshooting</td>
               <td>2017-08</td>
-            </tr>     
+            </tr>
 
             <tr>
               <td>SkillSoft</td>
@@ -593,7 +607,7 @@
               <td>SkillSoft</td>
               <td>CompTIA A+ 220-902: Various Features and Requirements of Microsoft OS</td>
               <td>2017-08</td>
-            </tr>                     
+            </tr>
             <!-- additional row
 	  <tr>
         <td>	</td>
@@ -620,8 +634,8 @@
           <a class="resourceLink" href="http://getbootstrap.com/" target="_blank"><img src="../images/bootstrap.jpg"
       alt="Boostrap" style="width:152.5px;height:30px;"></a>
           <a class="resourceLink" href="https://datatables.net/" target="_blank"><img src="../images/datatables.png"
-      alt="DataTables" style="width:144.5px;height:30px;"></a>      
-      </center>
+      alt="DataTables" style="width:144.5px;height:30px;"></a>
+        </center>
       </div>
 
 </body>

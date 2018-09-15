@@ -41,7 +41,7 @@ h1, h2, h3 {
 
 .show-hide:hover, .show-hide:focus,
 .skill-button:hover, .skill-button:focus {
-    background-color: #1d4d8f;
+    background-color: #007bff;
     color: #ffffff; 
 }
 

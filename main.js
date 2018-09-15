@@ -1,7 +1,18 @@
 $(document).ready(function () {
-    
-    // Skills Table
-    $('#skillsTable').DataTable({
+
+// Start Skills Tab
+    // Auto hide skills on load
+    $('.skill-category').hide();
+
+    // Event handler for clicking a category
+    $('.skill-button').on('click', function () {
+        $(this).find('i').toggleClass('fa-caret-down').toggleClass('fa-caret-right');
+        $(this).next().slideToggle(400);
+    });
+// End Skills Tab
+
+// Course Table
+    $('#courseTable').DataTable({
         responsive: true,
         order: [2, 'desc'], //default sort on completed date, descending
         lengthMenu: [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]], //table length options, -1 shows all
@@ -14,7 +25,7 @@ $(document).ready(function () {
             aria: { paginate: { first: 'First', previous: 'Previous', next: 'Next', last: 'Last' } }
         },
     });
-    //End Skills Table 
+// End Course Table 
 
 });
 

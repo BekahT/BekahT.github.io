@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Rebekah's Site</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,53 +14,344 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
 
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="https://bekaht.github.io/">
-                        <i class="fas fa-home"></i> Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-clipboard-list"></i> Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-graduation-cap"></i> Courses</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-briefcase"></i> Projects</a>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav navbar-right">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/BekahT" target="_blank">
-                        <i class="fab fa-github"></i> GitHub</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="resources/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
+
+    <!-- Datatables Required JS-->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <!-- Datatables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-100568121-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+    <!-- Start Navigation Bar -->
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+                aria-selected="true">
+                <i class="fas fa-home"></i> Home</a>
+            <a class="nav-item nav-link" id="nav-skills-tab" data-toggle="tab" href="#nav-skills" role="tab" aria-controls="nav-skills"
+                aria-selected="false">
+                <i class="fas fa-clipboard-list"></i> Skills</a>
+            <a class="nav-item nav-link" id="nav-courses-tab" data-toggle="tab" href="#nav-courses" role="tab" aria-controls="nav-courses"
+                aria-selected="false">
+                <i class="fas fa-graduation-cap"></i> Courses</a>
+            <a class="nav-item nav-link" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab" aria-controls="nav-projects"
+                aria-selected="false">
+                <i class="fas fa-briefcase"></i> Projects</a>
+        </div>
+    </nav>
+    <!-- End Navigation Bar -->
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="nav-tabContent">
+        <!-- Home Tab Content -->
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <h2>This is the Home Tab</h2>
+        </div>
+
+        <!-- Skills Tab Content -->
+        <div class="tab-pane fade" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab">
+            <h2>This is the Skills tab</h2>
+        </div>
+
+        <!-- Courses Tab Content -->
+        <div class="tab-pane fade" id="nav-courses" role="tabpanel" aria-labelledby="nav-courses-tab">
+            <div class="container">
+                <div class="card">
+                    <!-- Default panel contents -->
+                    <div class="card-header">
+                        <h2>Courses and Certifications</h2>
+                    </div>
+
+                    <!-- Skills Table -->
+                    <table class="table hover" id="skillsTable">
+                        <thead>
+                            <tr>
+                                <th>Source</th>
+                                <th>Course or Certification Name</th>
+                                <th>Completed</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>CompTIA</td>
+                                <td>A+ Certified</td>
+                                <td>2018-03</td>
+                            </tr>
+
+                            <tr>
+                                <td>TestOut</td>
+                                <td>PC Pro Certified</td>
+                                <td>2018-03</td>
+                            </tr>
+
+                            <tr>
+                                <td>SoloLearn</td>
+                                <td>Java</td>
+                                <td>2018-05</td>
+                            </tr>
+
+                            <tr>
+                                <td>SoloLearn</td>
+                                <td>SQL Fundamentals</td>
+                                <td>2018-04</td>
+                            </tr>
+
+                            <tr>
+                                <td>SkillSoft</td>
+                                <td>Programming Best Practices: Getting Started with Hello, World!</td>
+                                <td>2016-12</td>
+                            </tr>
+
+                            <tr>
+                                <td>SkillSoft</td>
+                                <td>Software Development Fundamentals: Introduction to Programming</td>
+                                <td>2016-12</td>
+                            </tr>
+
+                            <tr>
+                                <td>SkillSoft</td>
+                                <td>Software Development Fundamentals: Programming Basics</td>
+                                <td>2017-01</td>
+                            </tr>
+
+                            <tr>
+                                <td>SkillSoft</td>
+                                <td>Software Development Fundamentals: Beginning Windows Applications</td>
+                                <td>2017-01</td>
+                            </tr>
+
+                            <tr>
+                                <td>SkillSoft</td>
+                                <td>Agile Project Management Fundamentals: Agile Principles, Methodologies, and Mindset</td>
+                                <td>2017-02</td>
+                            </tr>
+
+                            <tr>
+                                <td>SkillSoft</td>
+                                <td>Agile Project Management Fundamentals: Agile Planning</td>
+                                <td>2017-03</td>
+                            </tr>
+
+                            <tr>
+                                <td>SkillSoft</td>
+                                <td>Agile Project Management Fundamentals: Planning and Monitoring Iterations in Agile Projects</td>
+                                <td>2017-04</td>
+                            </tr>
+
+                            <tr>
+                                <td>Codecademy</td>
+                                <td>Learn the Command Line</td>
+                                <td>2017-06</td>
+                            </tr>
+
+                            <tr>
+                                <td>Codecademy</td>
+                                <td>Learn HTML and CSS: Part 1</td>
+                                <td>2017-06</td>
+                            </tr>
+
+                            <tr>
+                                <td>Codecademy</td>
+                                <td>Make a Website</td>
+                                <td>2017-06</td>
+                            </tr>
+
+                            <tr>
+                                <td>Codecademy</td>
+                                <td>Learn SASS</td>
+                                <td>2017-06</td>
+                            </tr>
+
+                            <tr>
+                                <td>Codecademy</td>
+                                <td>Learn Responsive Design</td>
+                                <td>2017-07</td>
+                            </tr>
+
+                            <tr>
+                                <td>Codecademy</td>
+                                <td>Learn Git</td>
+                                <td>2017-07</td>
+                            </tr>
+
+                            <tr>
+                                <td>Codecademy</td>
+                                <td>Learn JavaScript</td>
+                                <td>2017-07</td>
+                            </tr>
+
+                            <tr>
+                                <td>UMUC Online</td>
+                                <td>Concepts and Applications of Information Technology (IFSM201)</td>
+                                <td>2017-10</td>
+                            </tr>
+
+                            <tr>
+                                <td>UMUC Online</td>
+                                <td>Introduction to Problem Solving and Algorithm Design (CMIS102)</td>
+                                <td>2017-10</td>
+                            </tr>
+
+                            <tr>
+                                <td>UDemy</td>
+                                <td>JavaScript Essentials 2017 Mini Course</td>
+                                <td>2017-11</td>
+                            </tr>
+
+                            <tr>
+                                <td>UMUC Online</td>
+                                <td>Digital Forensics in the Criminal Justice System (CCJS321)</td>
+                                <td>2017-12</td>
+                            </tr>
+
+                            <tr>
+                                <td>UMUC Online</td>
+                                <td>Social Networking & Cybersecurity Best Practices (CMIS111)</td>
+                                <td>2017-12</td>
+                            </tr>
+
+                            <tr>
+                                <td>UDemy</td>
+                                <td>RegEx Academy: An Introduction to Text Parsing Sorcery</td>
+                                <td>2017-12</td>
+                            </tr>
+
+                            <tr>
+                                <td>UMUC Online</td>
+                                <td>Introductory Programming in Java (CMIS141)</td>
+                                <td>2018-05</td>
+                            </tr>
+
+                            <tr>
+                                <td>UMUC Online</td>
+                                <td>Relational Database Concepts and Applications with Oracle (CMIS320)</td>
+                                <td>2018-05</td>
+                            </tr>
+
+                            <tr>
+                                <td>UMUC Online</td>
+                                <td>Fundamentals of Computer Troubleshooting (CMIT202)</td>
+                                <td>2018-03</td>
+                            </tr>
+
+                            <tr>
+                                <td>UMUC Online</td>
+                                <td>Fundamentals of Networking (CMIT265)</td>
+                                <td>2018-03</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Courses Tab END -->
+
+        <!-- Projects Tab Content -->
+        <div class="tab-pane fade" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
+                <!-- Each photo is 990x593 on mac screenshot -->
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/bowlingProject.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Bowling Score Calculator</h5>
+                        <p class="card-text">A JavaScript program which, given a valid sequence of rolls for one line of American Ten-Pin Bowling,
+                            produces the total score for the game.</p>
+                        <a href="https://bekaht.github.io/splits-happen/" target="_blank" class="btn btn-primary">Open Project</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/colorProject.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">RGB Guessing Game</h5>
+                        <p class="card-text">A game that utilizes JavaScript to determine if the user has selected the correct color of the displayed
+                            RGB value, with easy and hard modes.</p>
+                        <a href="https://bekaht.github.io/udemyProjects/ColorGuessingGame/index.html" target="_blank" class="btn btn-primary">Open Project</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/businessProject.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Small Business Website</h5>
+                        <p class="card-text">A single-page website built on a Bootstrap template to provide contact information, a fillable rental
+                            application, and news for a business.</p>
+                        <a href="https://bekaht.github.io/hancock-heights/" target="_blank" class="btn btn-primary">Open Project</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/verseProject.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Bible Verse Generator</h5>
+                        <p class="card-text">A page, built with Bootstrap, that utilizes jQuery to display a pseudo-random Bible verse upon refresh
+                            with a choice of various backgrounds.</p>
+                        <a href="https://bekaht.github.io/verse-generator/" target="_blank" class="btn btn-primary">Open Project</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/todoProject.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">To-Do List</h5>
+                        <p class="card-text">A list utilizing CSS animation and jQuery to add, mark complete, and remove tasks.</p>
+                        <a href="https://bekaht.github.io/udemyProjects/ToDoList/index.html" target="_blank" class="btn btn-primary">Open Project</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/blogProject.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog</h5>
+                        <p class="card-text">A blog, built with Bootstrap, with posts organized in collapsable month sections.</p>
+                        <a href="https://bekaht.github.io/udemyProjects/Blog/index.html" target="_blank" class="btn btn-primary">Open Project</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/photoProject.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Photo Gallery</h5>
+                        <p class="card-text">A Bootstrap photo gallery to showcase a baking portfolio.</p>
+                        <a href="https://bekaht.github.io/udemyProjects/PhotoGallery/index.html" target="_blank" class="btn btn-primary">Open Project</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/scoreProject.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Score Keeper</h5>
+                        <p class="card-text">A JavaScript program that keeps track of player's scores and ends when one player wins.</p>
+                        <a href="https://bekaht.github.io/udemyProjects/ScoreKeeper/index.html" target="_blank" class="btn btn-primary">Open Project</a>
+                    </div>
+                </div>
+            </div>      
+        <!-- Project Tab END -->
 </body>
 
 </html>

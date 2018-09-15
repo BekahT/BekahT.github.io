@@ -106,7 +106,7 @@ p, ul {
 .right, .left {
     height: 722px;
     overflow: scroll;
-    border: 7px dotted #6a1ef7;
+    border: 7px solid #6a1ef7;
     padding: 1%;
     width: 45%;
     margin: 5% 0%;

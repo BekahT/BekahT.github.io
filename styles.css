@@ -16,6 +16,10 @@ h1, h2, h3 {
     background: linear-gradient(to right, #93EDC7, #1CD8D2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.lead {
+    text-align: center;
+}
+
 /* Skills Tab */
 .skill-button {
     margin: 1em auto;

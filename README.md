@@ -1,3 +1,3 @@
 # BekahT.github.io
 **** 
-My blog for practicing things I'm learning.
+This website contains a list of my technical skills, courses taken, certifications obtained, and links to my projects.

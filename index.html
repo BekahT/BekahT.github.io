@@ -1,826 +1,113 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <html lang="en-US">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Rebekah's Site</title>
-    <meta name="author" content="Rebekah RT Qu">
-    <meta name="description" content="This website contains a list of my technical skills, courses taken, certifications obtained, and links to my projects.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap core CSS -->
-    <link href="resources/bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
-
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="resources/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
-
-    <!-- Datatables Required JS-->
-    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-
-    <!-- Datatables CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-
-    <!-- My CSS -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Google Analytics -->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-100568121-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-</head>
-
-<body>
+<html lang="en">
+  
+  <head>
+    <title>Bekah's Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
     
-    <!-- Start Navigation Bar -->
-    <nav>
-        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
-                aria-selected="true">
-                <i class="fas fa-home"></i> Home</a>
-            <a class="nav-item nav-link" id="nav-skills-tab" data-toggle="tab" href="#nav-skills" role="tab" aria-controls="nav-skills"
-                aria-selected="false">
-                <i class="fas fa-clipboard-list"></i> Skills</a>
-            <a class="nav-item nav-link" id="nav-courses-tab" data-toggle="tab" href="#nav-courses" role="tab" aria-controls="nav-courses"
-                aria-selected="false">
-                <i class="fas fa-graduation-cap"></i> Courses</a>
-            <a class="nav-item nav-link" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab" aria-controls="nav-projects"
-                aria-selected="false">
-                <i class="fas fa-briefcase"></i> Projects</a>
-        </div>
-    </nav>
-    <!-- End Navigation Bar -->
-
-    <!-- Tab Content -->
-    <div class="tab-content" id="nav-tabContent">
-        <!-- Home Tab Content -->
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <div class="jumbotron text-center" id="homeBackground">
-                <h1 class="display-4">Welcome!</h1>
-                <p class="lead">This website contains a list of my technical skills, courses taken, certifications obtained, and links to
-                    my projects.</p>                
-                <a class="btn btn-primary btn-lg" href="https://github.com/BekahT" target="_blank" role="button">
-                    <i class="fab fa-github"></i> GitHub</a>
-            </div>
-        </div>
-
-        <!-- Skills Tab Content -->
-        <div class="tab-pane fade" id="nav-skills" role="tabpanel" aria-labelledby="nav-skills-tab">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <button class="skill-button btn btn-block">Web Development
-                            <i class="fas fa-caret-right"></i>
-                        </button>
-                        <ul class="skill-category">
-
-                            <li><abbr title="Hypertext Markup Language">HTML</abbr></li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 85%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-
-                            <li>Markdown</li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 75%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-
-                            <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 75%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-
-                            <li><a href="https://getbootstrap.com/" title="Bootstrap is an open source toolkit for developing with HTML, CSS, and JavaScript." target="_blank">Bootstrap</a></li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 70%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-
-                            <li>JavaScript</li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 65%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-
-                            <li><a href="https://jquery.com/" title="jQuery is a fast, small, and feature-rich JavaScript library." target="_blank">jQuery</a></li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 65%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-                            
-                            <li>Python</li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 55%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-                            
-                            <li><abbr title="PHP: Hypertext Preprocessor">PHP</abbr></li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 55%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-                            
-                            <li><a href="https://nodejs.org/en/" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine." target="_blank">Node.js</a></li>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning" style="width: 40%">
-                                    <span>Competent</span>
-                                </div>
-                            </div>
-                            
-                            <li><a href="https://expressjs.com/" title="Express is a fast, unopinionated, minimalist web framework for Node.js." target="_blank">Express</a></li>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning" style="width: 40%">
-                                    <span>Competent</span>
-                                </div>
-                            </div>
-                            
-                            <li>RESTful Web Services</li>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning" style="width: 30%">
-                                    <span>Competent</span>
-                                </div>
-                            </div>
-                            
-                            <li><abbr title="Application Programming Interfaces">APIs</abbr></li>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning" style="width: 30%">
-                                    <span>Competent</span>
-                                </div>
-                            </div>
-                            
-                            <li><a href="https://mongoosejs.com/" title="Mongoose is MongoDB object modeling for Node.js." target="_blank">Mongoose</a></li>
-                            <div class="progress">
-                                <div class="progress-bar bg-danger" style="width: 25%">
-                                    <span>Novice</span>
-                                </div>
-                            </div>
-
-                            <li><a href="http://www.passportjs.org/" title="Passport is authentication middleware for Node.js." target="_blank">Passport</a></li>
-                            <div class="progress">
-                                <div class="progress-bar bg-danger" style="width: 20%">
-                                    <span>Novice</span>
-                                </div>
-                            </div>
-                        
-                        </ul>
-
-                        <button class="skill-button btn btn-block">Programming
-                            <i class="fas fa-caret-right"></i>
-                        </button>
-                        <ul class="skill-category">
-
-                            <li>Java</li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 70%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-
-                            <li>C/C++</li>
-                            <div class="progress">
-                                <div class="progress-bar bg-danger" style="width: 20%">
-                                    <span>Novice</span>
-                                </div>
-                            </div>
-                        </ul>
-
-                        <button class="skill-button btn btn-block">Databases
-                            <i class="fas fa-caret-right"></i>
-                        </button>
-                        <ul class="skill-category">
-
-                            <li>Oracle</li>
-                            <div class="progress">                                
-                                <div class="progress-bar bg-warning" style="width: 60%">
-                                    <span>Competent</span>
-                                </div>
-                            </div>
-
-                            <li>MySQL</li>
-                            <div class="progress">                                
-                                <div class="progress-bar bg-warning" style="width: 40%">
-                                    <span>Competent</span>
-                                </div>
-                            </div>
-                            
-                            <li><a href="https://aws.amazon.com/dynamodb/" 
-                                title="Amazon DynamoDB is a key-value and document database. It's a fully managed, multiregion, multimaster, durable database with built-in security, backup and restore, and in-memory caching for internet-scale applications." 
-                                target="_blank">Amazon DynamoDB</a></li>
-                            <div class="progress">                                
-                                <div class="progress-bar bg-warning" style="width: 35%">
-                                    <span>Competent</span>
-                                </div>
-                            </div>
-                            
-                            <li><a href="https://www.mongodb.com/" title="MongoDB is a cross-platform document-oriented database program." target="_blank">MongoDB</a></li>
-                            <div class="progress">                                
-                                <div class="progress-bar bg-danger" style="width: 25%">
-                                    <span>Novice</span>
-                                </div>
-                            </div>
-                        </ul>
-
-                        <button class="skill-button btn btn-block">Developer Tools
-                            <i class="fas fa-caret-right"></i>
-                        </button>
-                        <ul class="skill-category">                            
-                            <li><a href="https://about.gitlab.com/" title="GitLab is a web-based Git-repository manager providing wiki, issue-tracking and CI/CD pipeline features, using an open-source license." target="_blank">GitLab</a></li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 90%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-
-                            <li><a href="https://github.com/" title="GitHub is a web-based hosting service for version control using Git." target="_blank">GitHub</a></li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 75%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-                            
-                            <li>Regular Expressions</li>
-                            <div class="progress">                                
-                                <div class="progress-bar progress-bar-primary" style="width: 75%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-
-                            <li>Chrome Developer Tools</li>
-                            <div class="progress">                                
-                                <div class="progress-bar progress-bar-primary" style="width: 75%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-
-                            <li>Command Line</li>
-                            <div class="progress">                                
-                                <div class="progress-bar bg-warning" style="width: 45%">
-                                    <span>Competent</span>
-                                </div>
-                            </div>
-
-                            <li><a href="https://www.getpostman.com/" title="Postman is an API development and testing environment." target="_blank">Postman</a></li>
-                            <div class="progress">                                
-                                <div class="progress-bar bg-danger" style="width: 25%">
-                                    <span>Novice</span>
-                                </div>
-                            </div>
-
-                        </ul>
-
-                        <button class="skill-button btn btn-block">Version Control
-                            <i class="fas fa-caret-right"></i>
-                        </button>
-                        <ul class="skill-category">
-                            <li>Github Desktop</li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 80%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-                            
-                            <li>Git</li>
-                            <div class="progress">                                
-                                <div class="progress-bar progress-bar-primary" style="width: 75%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-                        </ul>
-
-                        <button class="skill-button btn btn-block">IDEs
-                            <i class="fas fa-caret-right"></i>
-                        </button>
-                        <ul class="skill-category">
-
-                            <li>Notepad++</li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 97%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-
-                            <li>Visual Studio Code</li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 90%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-                            
-                            <li><a href='https://aws.amazon.com/cloud9/' target='_blank'
-                                title='AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you code with just a browser.'>
-                                Amazon Cloud9</a></li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 90%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-
-                            <li>NetBeans</li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 80%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-                            
-                            <li>SQL Developer</li>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning" style="width: 45%">
-                                    <span>Competent</span>
-                                </div>
-                            </div>
-
-                            <li>Eclipse</li>
-                            <div class="progress">
-                                <div class="progress-bar bg-danger" style="width: 30%">
-                                    <span>Novice</span>
-                                </div>
-                            </div>
-
-                        </ul>
-
-                        <button class="skill-button btn btn-block">Other
-                            <i class="fas fa-caret-right"></i>
-                        </button>
-                        <ul class="skill-category">
-
-                            <li>Software Testing (Manual)</li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 95%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-                            
-                            <li>Katalon Studio</li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 85%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-                            
-                            <li>Software Testing (Automated)</li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 75%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-                            
-                            <li>Cybersecurity and Software Security</li>
-                            <div class="progress">                                
-                                <div class="progress-bar progress-bar-primary" style="width: 65%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-                            
-                            <li>Agile Development Lifecycle</li>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" style="width: 60%">
-                                    <span>Proficient</span>
-                                </div>
-                            </div>
-                            
-                            <li>Computer Hardware</li>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning" style="width: 50%">
-                                    <span>Competent</span>
-                                </div>
-                            </div>
-
-                            <li>Computer Networking</li>
-                            <div class="progress">                                
-                                <div class="progress-bar bg-warning" style="width: 50%">
-                                    <span>Competent</span>
-                                </div>
-                            </div>
-                            
-                            <li>Amazon Web Services</li>
-                            <div class="progress">
-                                <div class="progress-bar bg-danger" style="width: 30%">
-                                    <span>Novice</span>
-                                </div>
-                            </div>
-
-                            <li>Digital Forensics</li>
-                            <div class="progress">
-                                <div class="progress-bar bg-danger" style="width: 25%">
-                                    <span>Novice</span>
-                                </div>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Courses Tab Content -->
-        <div class="tab-pane fade" id="nav-courses" role="tabpanel" aria-labelledby="nav-courses-tab">
-            <div class="container">
-                <div id="degreeProgress">
-                    <h2>B.S. Software Development and Security</h2>
-                    <p>Filter on 'UMGC' below to find associated courses.</p>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 95%">
-                            2 Courses Remaining
-                        </div>
-                        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 7.5%">
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="courseCard">
-                    <!-- Default panel contents -->
-                    <div class="card-header">
-                        <h2>Courses and Certifications</h2>
-                    </div>
-
-                    <!-- Skills Table -->
-                    <table class="table hover" id="courseTable">
-                        <thead>
-                            <tr>
-                                <th>Source</th>
-                                <th>Course or Certification Name</th>
-                                <th>Completed</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Secure Programming in the Cloud (SDEV400)</td>
-                                <td>2019-12</td>
-                            </tr>
-                            
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Mitigating Software Vulnerabilities (SDEV425)</td>
-                                <td>2019-10</td>
-                            </tr>
-                            
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Secure Software Engineering (SDEV360)</td>
-                                <td>2019-07</td>
-                            </tr>
-                            
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Detecting Software Vulnerabilities (SDEV325)</td>
-                                <td>2019-07</td>
-                            </tr>
-                            
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Building Secure Web Applications (SDEV300)</td>
-                                <td>2019-03</td>
-                            </tr>
-                            
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Database Security (SDEV350)</td>
-                                <td>2019-03</td>
-                            </tr>
-                            
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Intermediate Programming in Java (CMIS242)</td>
-                                <td>2018-12</td>
-                            </tr>
-                            
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Software Engineer Principles & Techniques (CMIS330)</td>
-                                <td>2018-12</td>
-                            </tr>
-
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Network Security (CMIT320)</td>
-                                <td>2018-08</td>
-                            </tr>
-
-                            <tr>
-                                <td>TestOut</td>
-                                <td><a href='http://verification.testout.com/?id=C2XQ9' target='_blank'>Security Pro Certified</a></td>
-                                <td>2018-08</td>
-                            </tr>
-
-                            <tr>
-                                <td>SoloLearn</td>
-                                <td><a href='https://www.sololearn.com/Certificate/1059-8770044/pdf/' target='_blank'>PHP</a></td>
-                                <td>2018-07</td>
-                            </tr>
-
-                            <tr>
-                                <td>SoloLearn</td>
-                                <td><a href='https://www.sololearn.com/Certificate/1073-8770044/pdf/' target='_blank'>Python 3</a></td>
-                                <td>2018-07</td>
-                            </tr>
-
-                            <tr>
-                                <td>SoloLearn</td>
-                                <td><a href='https://www.sololearn.com/Certificate/1082-8770044/pdf/' target='_blank'>jQuery</a></td>
-                                <td>2018-07</td>
-                            </tr>
-
-                            <tr>
-                                <td>SoloLearn</td>
-                                <td><a href='https://www.sololearn.com/Certificate/1024-8770044/pdf/' target='_blank'>JavaScript</a></td>
-                                <td>2018-06</td>
-                            </tr>
-
-                            <tr>
-                                <td>CompTIA</td>
-                                <td><a href='https://www.certmetrics.com/comptia/public/verification.aspx?code=CR5CTS48WZ0PVQC3' target='_blank'>A+ Certified</a></td>
-                                <td>2018-03</td>
-                            </tr>
-
-                            <tr>
-                                <td>TestOut</td>
-                                <td><a href='http://verification.testout.com/?id=C2XQ9' target='_blank'>PC Pro Certified</a></td>
-                                <td>2018-03</td>
-                            </tr>
-
-                            <tr>
-                                <td>SoloLearn</td>
-                                <td><a href='https://www.sololearn.com/Certificate/1068-8770044/pdf/' target='_blank'>Java</a></td>
-                                <td>2018-05</td>
-                            </tr>
-
-                            <tr>
-                                <td>SoloLearn</td>
-                                <td><a href='https://www.sololearn.com/Certificate/1060-8770044/pdf/' target='_blank'>SQL Fundamentals</a></td>
-                                <td>2018-04</td>
-                            </tr>
-
-                            <tr>
-                                <td>SkillSoft</td>
-                                <td>Programming Best Practices: Getting Started with Hello, World!</td>
-                                <td>2016-12</td>
-                            </tr>
-
-                            <tr>
-                                <td>SkillSoft</td>
-                                <td>Software Development Fundamentals: Introduction to Programming</td>
-                                <td>2016-12</td>
-                            </tr>
-
-                            <tr>
-                                <td>SkillSoft</td>
-                                <td>Software Development Fundamentals: Programming Basics</td>
-                                <td>2017-01</td>
-                            </tr>
-
-                            <tr>
-                                <td>SkillSoft</td>
-                                <td>Software Development Fundamentals: Beginning Windows Applications</td>
-                                <td>2017-01</td>
-                            </tr>
-
-                            <tr>
-                                <td>SkillSoft</td>
-                                <td>Agile Project Management Fundamentals: Agile Principles, Methodologies, and Mindset</td>
-                                <td>2017-02</td>
-                            </tr>
-
-                            <tr>
-                                <td>SkillSoft</td>
-                                <td>Agile Project Management Fundamentals: Agile Planning</td>
-                                <td>2017-03</td>
-                            </tr>
-
-                            <tr>
-                                <td>SkillSoft</td>
-                                <td>Agile Project Management Fundamentals: Planning and Monitoring Iterations in Agile Projects
-                                </td>
-                                <td>2017-04</td>
-                            </tr>
-
-                            <tr>
-                                <td>Codecademy</td>
-                                <td>Learn the Command Line</td>
-                                <td>2017-06</td>
-                            </tr>
-
-                            <tr>
-                                <td>Codecademy</td>
-                                <td>Learn HTML and CSS: Part 1</td>
-                                <td>2017-06</td>
-                            </tr>
-
-                            <tr>
-                                <td>Codecademy</td>
-                                <td>Make a Website</td>
-                                <td>2017-06</td>
-                            </tr>
-
-                            <tr>
-                                <td>Codecademy</td>
-                                <td>Learn SASS</td>
-                                <td>2017-06</td>
-                            </tr>
-
-                            <tr>
-                                <td>Codecademy</td>
-                                <td>Learn Responsive Design</td>
-                                <td>2017-07</td>
-                            </tr>
-
-                            <tr>
-                                <td>Codecademy</td>
-                                <td>Learn Git</td>
-                                <td>2017-07</td>
-                            </tr>
-
-                            <tr>
-                                <td>Codecademy</td>
-                                <td>Learn JavaScript</td>
-                                <td>2017-07</td>
-                            </tr>
-
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Concepts and Applications of Information Technology (IFSM201)</td>
-                                <td>2017-10</td>
-                            </tr>
-
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Introduction to Problem Solving and Algorithm Design (CMIS102)</td>
-                                <td>2017-10</td>
-                            </tr>
-
-                            <tr>
-                                <td>UDemy</td>
-                                <td><a href='https://www.udemy.com/certificate/UC-NKP35BU5/' target='_blank'>JavaScript Essentials 2017 Mini Course</a></td>
-                                <td>2017-11</td>
-                            </tr>
-
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Digital Forensics in the Criminal Justice System (CCJS321)</td>
-                                <td>2017-12</td>
-                            </tr>
-
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Social Networking & Cybersecurity Best Practices (CMIS111)</td>
-                                <td>2017-12</td>
-                            </tr>
-
-                            <tr>
-                                <td>UDemy</td>
-                                <td><a href='https://www.udemy.com/certificate/UC-I8WC1PHD/' target='_blank'>RegEx Academy: An Introduction to Text Parsing Sorcery</a></td>
-                                <td>2017-12</td>
-                            </tr>
-
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Introductory Programming in Java (CMIS141)</td>
-                                <td>2018-05</td>
-                            </tr>
-
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Relational Database Concepts and Applications with Oracle (CMIS320)</td>
-                                <td>2018-05</td>
-                            </tr>
-
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Fundamentals of Computer Troubleshooting (CMIT202)</td>
-                                <td>2018-03</td>
-                            </tr>
-
-                            <tr>
-                                <td>UMGC</td>
-                                <td>Fundamentals of Networking (CMIT265)</td>
-                                <td>2018-03</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <!-- Courses Tab END -->
-
-        <!-- Projects Tab Content -->
-        <div class="tab-pane fade" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
-            <div class="container-fluid">
-                <!-- Each photo is 990x593 on mac screenshot -->
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/bowlingProject.png" alt="Bowling Score Calculator">
-                    <div class="card-body">
-                        <h5 class="card-title">Bowling Score Calculator</h5>
-                        <p class="card-text">A JavaScript program which, given a valid sequence of rolls for one line of American Ten-Pin Bowling,
-                            produces the total score for the game.</p>
-                        <a href="https://bekaht.github.io/splits-happen/" target="_blank" class="btn btn-primary">Open Project</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/patatapProject.png" alt="Patatap Clone">
-                    <div class="card-body">
-                        <h5 class="card-title">Patatap Clone</h5>
-                        <p class="card-text">A game that plays a different sound and generates a different colored animated circle on the screen
-                            for each letter pressed using Howler.js and Paper.js libraries.</p>
-                        <a href="https://bekaht.github.io/udemyProjects/PatatapClone/index.html" target="_blank" class="btn btn-primary">Open Project</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/colorProject.png" alt="RGB Guessing Game">
-                    <div class="card-body">
-                        <h5 class="card-title">RGB Guessing Game</h5>
-                        <p class="card-text">A game that utilizes JavaScript to determine if the user has selected the correct color of the displayed
-                            RGB value, with easy and hard modes.</p>
-                        <a href="https://bekaht.github.io/udemyProjects/ColorGuessingGame/index.html" target="_blank" class="btn btn-primary">Open Project</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/businessProject.png" alt="Small Business Website">
-                    <div class="card-body">
-                        <h5 class="card-title">Small Business Website</h5>
-                        <p class="card-text">A single-page website built on a Bootstrap template to provide contact information, a fillable rental
-                            application, and news for a business.</p>
-                        <a href="http://hancockheightsestates.com/" target="_blank" class="btn btn-primary">Open Project</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/verseProject.png" alt="Bible Verse Generator">
-                    <div class="card-body">
-                        <h5 class="card-title">Bible Verse Generator</h5>
-                        <p class="card-text">A page, built with Bootstrap, that utilizes jQuery to display a pseudo-random Bible verse upon refresh
-                            with a choice of various backgrounds.</p>
-                        <a href="https://bekaht.github.io/verse-generator/" target="_blank" class="btn btn-primary">Open Project</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/todoProject.png" alt="To-Do List">
-                    <div class="card-body">
-                        <h5 class="card-title">To-Do List</h5>
-                        <p class="card-text">A list utilizing CSS animation and jQuery to add, mark complete, and remove tasks.</p>
-                        <a href="https://bekaht.github.io/udemyProjects/ToDoList/index.html" target="_blank" class="btn btn-primary">Open Project</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/blogProject.png" alt="Blog">
-                    <div class="card-body">
-                        <h5 class="card-title">Blog</h5>
-                        <p class="card-text">A blog, built with Bootstrap, with posts organized in collapsable month sections.</p>
-                        <a href="https://bekaht.github.io/udemyProjects/Blog/index.html" target="_blank" class="btn btn-primary">Open Project</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/photoProject.png" alt="Photo Gallery">
-                    <div class="card-body">
-                        <h5 class="card-title">Photo Gallery</h5>
-                        <p class="card-text">A Bootstrap photo gallery to showcase a baking portfolio.</p>
-                        <a href="https://bekaht.github.io/udemyProjects/PhotoGallery/index.html" target="_blank" class="btn btn-primary">Open Project</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="img/scoreProject.png" alt="Score Keeper">
-                    <div class="card-body">
-                        <h5 class="card-title">Score Keeper</h5>
-                        <p class="card-text">A JavaScript program that keeps track of player's scores and ends when one player wins.</p>
-                        <a href="https://bekaht.github.io/udemyProjects/ScoreKeeper/index.html" target="_blank" class="btn btn-primary">Open Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Project Tab END -->
-</body>
-
+    <link rel="shortcut icon" type="image/jpg" href="Images/Family.jpg"/>
+    
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-100568121-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  </head>
+  
+  <body>  
+    <div class="page-header">
+    <ul class="nav-bar">
+      <li><a href="https://github.com/BekahT" target="_blank">GitHub</a></li>
+      <li><a href="MailTo:BekahT.GitHub@Gmail.com">Email</a></li>
+    <div class="tip">
+      <li>Projects</li>
+        <span class="tiptext">Coming Soon!</span> 
+    </div>
+    </ul>
+    </div>
+
+    <div class="heading">
+      <div ID="title">
+        <h1>Welcome to My Page</h1>
+      </div>
+    </div>
+
+    <div class="left">
+      <h2>About Me</h2>
+      <p>At university I studied economics, political science, and East Asian studies, but ended up as an admin for a team of amazing software developers. I've been doing some requirements testing at work when I'm not doing admin things and love it, so I thought I should learn a bit of coding as well. This page is where I will practice what I'm learning and keep a record of what I've learned.</p> 
+
+      <h2>Things I'm Learning</h2>
+      <ul>
+        <li><b><u>Web Development:</b></u></li>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Markdown</li>
+          <li>Bootstrap</li>
+        </ul>
+        <li><b><u>Programming:</b></u></li>
+        <ul>
+          <li>C#</li>
+        </ul>
+        <li><b><u>Developer Tools:</b></u></li>
+        <ul>
+          <li>Command Line</li>
+          <li>GitLab</li>
+          <li>GitHub</li>
+          <li>SmartGit</li>
+          <li>VisualCode</li>
+        </ul>
+        <li><b><u>Other:</b></u></li>
+        <ul>
+          <li>Computer Hardware</li>
+          <li>Computer Networking</li>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="right">
+      <h2>My Blog</h2>
+      <p><b><u>June 7, 2017:</b></u> Completed the <i>Make a Website</i> course (3 hours) from 
+        <a href="https://www.codecademy.com/" target="_blank">codecademy</a>. This course covered a lot of the same things as the HTML/CSS course I finished yesterday, but it also included a section on Bootstrap. I may end up rewriting this site so I can utilize some <a href="http://getbootstrap.com/components/" target="_blank">Bootstrap components.</a></p>      
+      
+      <p><b><u>June 6, 2017:</b></u> Completed the <i>Learn HTML & CSS: Part 1</i> course (10 hours) from 
+        <a href="https://www.codecademy.com/" target="_blank">codecademy</a>. 
+      I love this site's courses. They're easy to understand and extremely interactive. I went from knowing nothing to being able to make this site (homely as it may be) in three days. <i class="em em-smiley"></i></p>
+
+      <p><b><u>June 4, 2017:</b></u> Changed the RAM on my Mac Mini from 4GB to 8GB. 
+        My computer didn't begin to smoke or spontaneously combust, so I'm calling this a win. 
+        Also, I can now use more than one program at a time, which is nice. Fun Fact: macOS Sierra uses about 2.3GB of RAM
+        just to exist. Watch the video below to see me in action.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1Y6sjyXvWPg" frameborder="0" allowfullscreen></iframe>
+
+      <p><b><u>June 2, 2017:</b></u> Completed the <i>Learn the Command Line</i> course (3 hours) from 
+        <a href="https://www.codecademy.com/" target="_blank">codecademy</a>. 
+      If only I'd known how to use Command Line in middle school when our teacher removed the classroom 
+      computer's mouse to prevent unauthorized computer usage.</p>
+
+      <p><b><u>May 20, 2017:</b></u> Started the first of my courses towards a degree in Computer Networks and Cybersecurity.
+        I'll also be completing courses for a minor in Information Systems Management. However, the school does 
+        not allow students with previous degrees to obtain minors. The skills I'll gain from the courses are more 
+        important than a line on a transcript saying it all counted as a minor anyway (I'm slightly salty). </p>
+
+      <p><b><u>April 13 - Present:</b></u> Completed eleven of fifteen preparation courses (16 hours so far) for the CompTIA 220-902 A+ certification.
+        I've gotten a bit sidetracked with reading a book on Systems Engineering and doing other courses.</p>
+
+      <p><b><u>February 28 - April 13, 2017:</b></u> Completed three courses (6 hours) on Agile Project Management. 
+        Where I work, we use a mix of Agile and Waterfall methodologies.</p>
+
+      <p><b><u>December 14, 2016 - January 19, 2017:</b></u> Completed four courses (10 hours) on programming basics and C#. 
+        I'm not going to lie - I've forgotten most everything already.</p>
+
+      <p><b><u>December 5, 2016:</b></u> After completing nineteen preparation courses (about 22 hours) and several attempts, 
+        I passed a practice exam for the CompTIA 220-901 A+ certification. It's been a good foundation since before 
+        this I knew next to nothing about computers beyond everyday usage.</p>
+    </div>
+  </body>
 </html>

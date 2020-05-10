@@ -1,16 +1,4 @@
 $(document).ready(function () {
-
-// Start Skills Tab
-    // Auto hide skills on load
-    $('.skill-category').hide();
-
-    // Event handler for clicking a category
-    $('.skill-button').on('click', function () {
-        $(this).find('i').toggleClass('fa-caret-down').toggleClass('fa-caret-right');
-        $(this).next().slideToggle(400);
-    });
-// End Skills Tab
-
 // Course Table
     $('#courseTable').DataTable({
         responsive: true,

@@ -2,8 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;    
 }
 
-h1, h2, h3 {
-    text-align: center;
+h1, h2 {
     font-family: 'Lato', sans-serif;   
 }
 
@@ -36,10 +35,6 @@ input[type="search"] {
 #courseCard {
     box-shadow: 3px 3px 20px rgba(0,0,0,0.3);
     display: block;
-}
-
-#degreeProgress {
-    margin: 50px 0;
 }
 
 /* Projects Tab */ 
